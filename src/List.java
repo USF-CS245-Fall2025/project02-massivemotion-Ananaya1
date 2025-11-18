@@ -1,8 +1,8 @@
 public interface List<T> {
 
-    public void add (int index, T element);
-    public boolean add (T element);
-    public T get (int index);
-    public T remove (int index);
-    public int size ();
+    void add(int index, T element) throws IndexOutOfBoundsException;
+    boolean add(T element);
+    T get(int index) throws IndexOutOfBoundsException;
+    T remove(int index) throws IndexOutOfBoundsException;
+    int size();
 }
